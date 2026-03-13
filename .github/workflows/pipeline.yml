@@ -2,9 +2,9 @@ name: Pipeline S&P 500
 
 on:
   push:
-    branches: [main]
+    branches: [dev, qa, prod]
   schedule:
-    # Chaque dimanche à 06:00 UTC
+    # Chaque dimanche à 06:00 UTC — s'exécute sur dev uniquement
     - cron: "0 6 * * 0"
   workflow_dispatch:
 
@@ -44,12 +44,15 @@ jobs:
           git diff --cached --quiet || git commit -m "ci: mise à jour automatique des données [skip ci]"
           git push
 
+      # GitHub Pages : uniquement depuis prod
       - name: Préparer le dossier pour GitHub Pages
+        if: github.ref == 'refs/heads/prod'
         run: |
           mkdir -p gh-pages
           cp data/report.html gh-pages/index.html
 
       - name: Publier sur GitHub Pages
+        if: github.ref == 'refs/heads/prod'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
