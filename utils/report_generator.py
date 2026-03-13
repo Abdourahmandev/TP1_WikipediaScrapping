@@ -48,8 +48,9 @@ class ReportGenerator:
 
         # --- Figure 3 : Top 15 états US ---
         rows = con.execute(
-            "SELECT state_name, n FROM gold.by_state ORDER BY n ASC LIMIT 15"
+            "SELECT state_name, n FROM gold.by_state ORDER BY n DESC LIMIT 15"
         ).fetchall()
+        rows = list(reversed(rows))  # barh : inverser pour afficher le plus grand en haut
         fig3 = px.bar(
             {"state": [r[0] for r in rows], "n": [r[1] for r in rows]},
             x="n", y="state", orientation="h",
