@@ -35,8 +35,9 @@ class ReportGenerator:
 
         # --- Figure 2 : Top 10 sous-secteurs ---
         rows = con.execute(
-            "SELECT gics_sub_industry, n FROM gold.by_sub_industry ORDER BY n ASC LIMIT 10"
+            "SELECT gics_sub_industry, n FROM gold.by_sub_industry ORDER BY n DESC LIMIT 10"
         ).fetchall()
+        rows = list(reversed(rows))  # barh : plus grand en haut
         fig2 = px.bar(
             {"sub": [r[0] for r in rows], "n": [r[1] for r in rows]},
             x="n", y="sub", orientation="h",
