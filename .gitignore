@@ -1,5 +1,4 @@
 # Generated data files
-*.duckdb
 *.csv
 
 # Python cache

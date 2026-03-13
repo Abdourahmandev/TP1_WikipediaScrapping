@@ -1,0 +1,60 @@
+name: Pipeline S&P 500
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Chaque dimanche à 06:00 UTC
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dépendances
+        working-directory: TP1_Wikipedia
+        run: pip install -r requirements.txt
+
+      - name: Lancer le pipeline (scraping + DuckDB + rapport)
+        working-directory: TP1_Wikipedia
+        run: python main.py
+
+      - name: Vérifier que report.html existe
+        run: test -f TP1_Wikipedia/report.html
+
+      - name: Commit sp500.duckdb et report.html
+        working-directory: TP1_Wikipedia
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sp500.duckdb report.html
+          git diff --cached --quiet || git commit -m "ci: mise à jour automatique des données [skip ci]"
+          git push
+
+      - name: Préparer le dossier pour GitHub Pages
+        run: |
+          mkdir -p gh-pages
+          cp TP1_Wikipedia/report.html gh-pages/index.html
+
+      - name: Publier sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: gh-pages
+          publish_branch: gh-pages
