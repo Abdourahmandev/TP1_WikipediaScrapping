@@ -70,8 +70,11 @@ class ReportGenerator:
             colorscale="Blues",
             colorbar_title="Entreprises",
         ))
+        rows_total = con.execute("SELECT COUNT(*) FROM gold.companies_enriched").fetchone()[0]
+        rows_mapped = con.execute("SELECT SUM(n) FROM gold.by_state").fetchone()[0] or 0
+        n_foreign = rows_total - rows_mapped
         fig4.update_layout(
-            title="Répartition géographique — États-Unis",
+            title=f"Répartition géographique — États-Unis ({n_foreign} sièges étrangers exclus)",
             geo_scope="usa",
             margin=dict(l=10, r=10, t=40, b=10),
         )

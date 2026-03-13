@@ -23,6 +23,8 @@ _US_STATES: list[tuple[str, str]] = [
     ("South Dakota", "SD"), ("Tennessee", "TN"), ("Texas", "TX"), ("Utah", "UT"),
     ("Vermont", "VT"), ("Virginia", "VA"), ("Washington", "WA"), ("West Virginia", "WV"),
     ("Wisconsin", "WI"), ("Wyoming", "WY"), ("District of Columbia", "DC"),
+    # Alias Wikipedia pour Washington, D.C.
+    ("D.C.", "DC"),
 ]
 
 
@@ -102,7 +104,11 @@ class DuckDBLoader:
                     TRY_CAST(
                         regexp_extract(date_added, '(1[0-9]{3}|20[0-9]{2})', 1)
                     AS INTEGER) AS added_year,
-                    TRIM(list_last(string_split(headquarters_location, ','))) AS state
+                    -- Suppression des références Wikipedia [n] éventuelles (ex: "Florida[4]")
+                    regexp_replace(
+                        TRIM(list_last(string_split(headquarters_location, ','))),
+                        '\\[[0-9]+\\]', ''
+                    ) AS state
                 FROM silver.sp500_companies
             )
             SELECT
