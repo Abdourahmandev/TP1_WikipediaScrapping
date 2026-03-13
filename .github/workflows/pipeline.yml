@@ -47,7 +47,7 @@ jobs:
       - name: Préparer le dossier pour GitHub Pages
         run: |
           mkdir -p gh-pages
-          cp TP1_Wikipedia/report.html gh-pages/index.html
+          cp report.html gh-pages/index.html
 
       - name: Publier sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
