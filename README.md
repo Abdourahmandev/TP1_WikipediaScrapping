@@ -1,42 +1,46 @@
-# S&P 500 Wikipedia Scraper
+# Scraper Wikipedia – S&P 500
 
-This project scrapes the **S&P 500 component stocks** table from:
+Ce projet extrait le tableau des **composantes du S&P 500** depuis :
 
 https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
 
-It uses an object-oriented design with separate responsibilities:
+Il repose sur une architecture orientée objet avec des responsabilités bien séparées :
 
-- `wikipedia_client.py`: HTTP client for fetching page HTML
-- `sp500_scraper.py`: parser that extracts companies from the Wikipedia table
-- `sp500_company.py`: data model (`SP500Company`)
-- `csv_exporter.py`: writes the scraped data to CSV
-- `main.py`: orchestration entry point
+- `wikipedia_client.py` : client HTTP pour récupérer le contenu HTML de la page
+- `sp500_scraper.py` : parseur qui extrait les entreprises depuis le tableau Wikipedia
+- `sp500_company.py` : modèle de données (`SP500Company`)
+- `duckdb_loader.py` : insère les données dans une table DuckDB
+- `csv_exporter.py` : exporte les données vers un fichier CSV (usage secondaire)
+- `main.py` : point d'entrée principal
 
-## Install
+## Installation
 
 ```bash
-pip install requests beautifulsoup4
+pip install -r requirements.txt
 ```
 
-## Run
+## Exécution
 
-From the `TP1_Wikipedia` folder:
+Depuis le dossier `TP1_Wikipedia` :
 
 ```bash
 python main.py
 ```
 
-Default output file:
+Fichier de sortie par défaut :
 
-- `sp500_companies.csv`
+- `sp500.duckdb` — base de données DuckDB contenant la table `sp500_companies`
 
-## CSV columns
+## Colonnes de la table DuckDB
 
-- `symbol`
-- `security`
-- `gics_sector`
-- `gics_sub_industry`
-- `headquarters_location`
-- `date_added`
-- `cik`
-- `founded`
+| Colonne | Description |
+|---|---|
+| `symbol` | Symbole boursier (ex. AAPL) |
+| `security` | Nom de l'entreprise |
+| `gics_sector` | Secteur GICS |
+| `gics_sub_industry` | Sous-secteur GICS |
+| `headquarters_location` | Siège social |
+| `date_added` | Date d'ajout au S&P 500 |
+| `cik` | Identifiant SEC (CIK) |
+| `founded` | Année de fondation |
+| `scraped_at` | Horodatage de l'extraction (UTC) |
