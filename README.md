@@ -4,14 +4,30 @@ Ce projet extrait le tableau des **composantes du S&P 500** depuis :
 
 https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
 
-Il repose sur une architecture orientée objet avec des responsabilités bien séparées :
+Il repose sur une architecture orientée objet avec des responsabilités bien séparées.
 
-- `wikipedia_client.py` : client HTTP pour récupérer le contenu HTML de la page
-- `sp500_scraper.py` : parseur qui extrait les entreprises depuis le tableau Wikipedia
-- `sp500_company.py` : modèle de données (`SP500Company`)
-- `duckdb_loader.py` : insère les données dans une table DuckDB
-- `csv_exporter.py` : exporte les données vers un fichier CSV (usage secondaire)
-- `main.py` : point d'entrée principal
+## Architecture du projet
+
+```
+TP1_Wikipedia/
+├── modele/
+│   ├── __init__.py
+│   └── sp500_company.py       # Dataclass SP500Company (modèle de données)
+├── utils/
+│   ├── __init__.py
+│   ├── wikipedia_client.py    # Client HTTP — récupère le HTML de Wikipedia
+│   ├── sp500_scraper.py       # Parseur — extrait les entreprises du tableau
+│   ├── duckdb_loader.py       # Insère les données dans DuckDB
+│   └── report_generator.py    # Génère le rapport HTML (Plotly)
+├── data/
+│   ├── sp500.duckdb           # Base de données DuckDB (généré automatiquement)
+│   └── report.html            # Rapport HTML interactif (généré automatiquement)
+├── .github/
+│   └── workflows/
+│       └── pipeline.yml       # CI/CD GitHub Actions (scraping + rapport + GitHub Pages)
+├── main.py                    # Point d'entrée principal
+└── requirements.txt
+```
 
 ## Installation
 
@@ -27,9 +43,10 @@ Depuis le dossier `TP1_Wikipedia` :
 python main.py
 ```
 
-Fichier de sortie par défaut :
+Fichiers de sortie générés dans `data/` :
 
-- `sp500.duckdb` — base de données DuckDB contenant la table `sp500_companies`
+- `data/sp500.duckdb` — base de données DuckDB contenant la table `sp500_companies`
+- `data/report.html` — rapport HTML interactif avec graphiques Plotly
 
 ## Colonnes de la table DuckDB
 
