@@ -112,12 +112,14 @@ class ReportGenerator:
             "SELECT gics_sector, avg_founded_year FROM gold.by_sector"
             " WHERE avg_founded_year IS NOT NULL ORDER BY avg_founded_year ASC"
         ).fetchall()
+        avg_years = [r[1] for r in rows]
         fig7 = px.bar(
-            {"sector": [r[0] for r in rows], "avg_year": [r[1] for r in rows]},
+            {"sector": [r[0] for r in rows], "avg_year": avg_years},
             x="avg_year", y="sector", orientation="h",
             title="Année de fondation moyenne par secteur",
             labels={"avg_year": "Année moyenne", "sector": "Secteur"},
             color="avg_year", color_continuous_scale="RdYlGn",
+            range_x=[min(avg_years) - 10, max(avg_years) + 5],
         )
         fig7.update_layout(coloraxis_showscale=False, margin=dict(l=10, r=10, t=40, b=10))
 
