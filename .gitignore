@@ -1,0 +1,14 @@
+# Generated data files
+*.duckdb
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
