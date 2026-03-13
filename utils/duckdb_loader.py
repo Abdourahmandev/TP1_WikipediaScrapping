@@ -5,7 +5,7 @@ from pathlib import Path
 
 import duckdb
 
-from sp500_company import SP500Company
+from modele.sp500_company import SP500Company
 
 
 class DuckDBLoader:

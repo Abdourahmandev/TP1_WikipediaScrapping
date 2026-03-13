@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from bs4 import BeautifulSoup
 
-from sp500_company import SP500Company
-from wikipedia_client import WikipediaClient
+from modele.sp500_company import SP500Company
+from utils.wikipedia_client import WikipediaClient
 
 
 class SP500Scraper:
