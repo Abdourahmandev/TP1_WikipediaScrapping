@@ -8,6 +8,10 @@ Il repose sur une architecture orientée objet avec des responsabilités bien s�
 
 ## Architecture du projet
 
+![Diagramme de flux du pipeline de données](data/Architecture_TP1.jpg)
+
+### Structure des fichiers
+
 ```
 TP1_Wikipedia/
 ├── modele/
