@@ -11,3 +11,8 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+# Airflow runtime files (not needed in repo)
+airflow/logs/*
+!airflow/logs/.gitkeep
+airflow/.env

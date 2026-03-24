@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+data/
+.git/
+.env
+.vscode/
+airflow/
