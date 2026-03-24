@@ -147,7 +147,7 @@ class ReportGenerator:
         rows = con.execute("""
             SELECT symbol, security, gics_sector, date_added
             FROM silver.sp500_companies
-            ORDER BY date_added DESC
+            ORDER BY TRY_CAST(date_added AS DATE) DESC NULLS LAST
             LIMIT 10
         """).fetchall()
         fig9 = go.Figure(go.Table(

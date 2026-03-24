@@ -21,14 +21,24 @@ TP1_Wikipedia/
 │   ├── __init__.py
 │   ├── wikipedia_client.py    # Client HTTP — récupère le HTML de Wikipedia
 │   ├── sp500_scraper.py       # Parseur — extrait les entreprises du tableau
-│   ├── duckdb_loader.py       # Insère les données dans DuckDB
+│   ├── duckdb_loader.py       # Couche Bronze/Silver/Gold dans DuckDB
 │   └── report_generator.py    # Génère le rapport HTML (Plotly)
+├── airflow/
+│   ├── Dockerfile.airflow     # Image Airflow avec providers-docker
+│   ├── docker-compose.yml     # Stack Airflow (webserver + scheduler + postgres)
+│   ├── dags/
+│   │   └── sp500_dag.py       # DAG quotidien (06:00 UTC) via DockerOperator
+│   ├── logs/                  # Logs Airflow (généré automatiquement)
+│   └── plugins/
 ├── data/
 │   ├── sp500.duckdb           # Base de données DuckDB (généré automatiquement)
-│   └── report.html            # Rapport HTML interactif (généré automatiquement)
+│   ├── report.html            # Rapport HTML interactif (généré automatiquement)
+│   └── bronze/
+│       └── sp500_raw.json     # Données brutes JSON (généré automatiquement)
 ├── .github/
 │   └── workflows/
-│       └── pipeline.yml       # CI/CD GitHub Actions (scraping + rapport + GitHub Pages)
+│       └── pipeline.yml       # CI/CD GitHub Actions (scraping + rapport + GitHub Pages + GHCR)
+├── Dockerfile                 # Image Docker du pipeline principal
 ├── main.py                    # Point d'entrée principal
 └── requirements.txt
 ```
@@ -65,3 +75,44 @@ Fichiers de sortie générés dans `data/` :
 | `cik` | Identifiant SEC (CIK) |
 | `founded` | Année de fondation |
 | `scraped_at` | Horodatage de l'extraction (UTC) |
+
+## Orchestration avec Airflow
+
+Le pipeline est orchestré par Apache Airflow via Docker Compose.
+
+### Prérequis
+
+- Docker Desktop en cours d'exécution
+- Créer le volume de données partagé (une seule fois) :
+
+```bash
+docker volume create sp500-data
+```
+
+### Démarrage
+
+```bash
+cd airflow
+
+# Première utilisation seulement — initialise la base de données et crée l'utilisateur admin
+docker compose up airflow-init
+
+# Démarrer la stack en arrière-plan
+docker compose up -d
+```
+
+Accéder à l'interface Airflow : http://localhost:8081  
+Identifiants : `admin` / `admin`
+
+### DAG
+
+Le DAG `sp500_daily_scrape` s'exécute automatiquement chaque jour à 06:00 UTC.  
+Il lance le conteneur Docker du pipeline (`Dockerfile` à la racine) et monte le volume `sp500-data` dans `/app/data`.
+
+Pour déclencher manuellement depuis l'interface, activer le DAG puis cliquer sur **Trigger DAG**.
+
+### Arrêt
+
+```bash
+docker compose down
+```
