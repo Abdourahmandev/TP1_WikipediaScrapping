@@ -1160,6 +1160,16 @@
     "founded": "1994"
   },
   {
+    "symbol": "COHR",
+    "security": "Coherent Corp.",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Electronic Components",
+    "headquarters_location": "Saxonburg, Pennsylvania",
+    "date_added": "2026-03-23",
+    "cik": "0000820318",
+    "founded": "1971"
+  },
+  {
     "symbol": "COIN",
     "security": "Coinbase",
     "gics_sector": "Financials",
@@ -1638,6 +1648,16 @@
     "date_added": "2002-07-22",
     "cik": "0001065088",
     "founded": "1995"
+  },
+  {
+    "symbol": "SATS",
+    "security": "EchoStar",
+    "gics_sector": "Communication Services",
+    "gics_sub_industry": "Wireless Telecommunication Services",
+    "headquarters_location": "Englewood, Colorado",
+    "date_added": "2026-03-23",
+    "cik": "0001415404",
+    "founded": "2008"
   },
   {
     "symbol": "ECL",
@@ -2830,16 +2850,6 @@
     "founded": "1980"
   },
   {
-    "symbol": "LW",
-    "security": "Lamb Weston",
-    "gics_sector": "Consumer Staples",
-    "gics_sub_industry": "Packaged Foods & Meats",
-    "headquarters_location": "Eagle, Idaho",
-    "date_added": "2018-12-03",
-    "cik": "0001679273",
-    "founded": "2016 (1950)"
-  },
-  {
     "symbol": "LVS",
     "security": "Las Vegas Sands",
     "gics_sector": "Consumer Discretionary",
@@ -2950,6 +2960,16 @@
     "founded": "1998"
   },
   {
+    "symbol": "LITE",
+    "security": "Lumentum",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Communications Equipment",
+    "headquarters_location": "San Jose, California",
+    "date_added": "2026-03-23",
+    "cik": "0001633978",
+    "founded": "2015"
+  },
+  {
     "symbol": "LYB",
     "security": "LyondellBasell",
     "gics_sector": "Materials",
@@ -3028,16 +3048,6 @@
     "date_added": "2008-07-18",
     "cik": "0001141391",
     "founded": "1966"
-  },
-  {
-    "symbol": "MTCH",
-    "security": "Match Group",
-    "gics_sector": "Communication Services",
-    "gics_sub_industry": "Interactive Media & Services",
-    "headquarters_location": "Dallas, Texas",
-    "date_added": "2021-09-20",
-    "cik": "0000891103",
-    "founded": "1986"
   },
   {
     "symbol": "MKC",
@@ -3178,16 +3188,6 @@
     "date_added": "2021-07-21",
     "cik": "0001682852",
     "founded": "2010"
-  },
-  {
-    "symbol": "MOH",
-    "security": "Molina Healthcare",
-    "gics_sector": "Health Care",
-    "gics_sub_industry": "Managed Health Care",
-    "headquarters_location": "Long Beach, California",
-    "date_added": "2022-03-02",
-    "cik": "0001179929",
-    "founded": "1980"
   },
   {
     "symbol": "TAP",
@@ -3618,16 +3618,6 @@
     "date_added": "1998-10-01",
     "cik": "0000723531",
     "founded": "1971"
-  },
-  {
-    "symbol": "PAYC",
-    "security": "Paycom",
-    "gics_sector": "Industrials",
-    "gics_sub_industry": "Human Resource & Employment Services",
-    "headquarters_location": "Oklahoma City, Oklahoma",
-    "date_added": "2020-01-28",
-    "cik": "0001590955",
-    "founded": "1998"
   },
   {
     "symbol": "PYPL",
@@ -4728,6 +4718,16 @@
     "date_added": "2013-09-23",
     "cik": "0000875320",
     "founded": "1989"
+  },
+  {
+    "symbol": "VRT",
+    "security": "Vertiv",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Electrical Components & Equipment",
+    "headquarters_location": "Westerville, Ohio",
+    "date_added": "2026-03-23",
+    "cik": "0001674101",
+    "founded": "2016"
   },
   {
     "symbol": "VTRS",
