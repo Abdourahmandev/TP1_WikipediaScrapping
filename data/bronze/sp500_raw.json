@@ -890,6 +890,16 @@
     "founded": "2012"
   },
   {
+    "symbol": "CASY",
+    "security": "Casey's",
+    "gics_sector": "Consumer Staples",
+    "gics_sub_industry": "Food Retail",
+    "headquarters_location": "Ankeny, Iowa",
+    "date_added": "2026-04-09",
+    "cik": "0000726958",
+    "founded": "1967"
+  },
+  {
     "symbol": "CAT",
     "security": "Caterpillar Inc.",
     "gics_sector": "Industrials",
@@ -2348,16 +2358,6 @@
     "date_added": "2017-06-19",
     "cik": "0001585689",
     "founded": "1919"
-  },
-  {
-    "symbol": "HOLX",
-    "security": "Hologic",
-    "gics_sector": "Health Care",
-    "gics_sub_industry": "Health Care Equipment",
-    "headquarters_location": "Marlborough, Massachusetts",
-    "date_added": "2016-03-30",
-    "cik": "0000859737",
-    "founded": "1985"
   },
   {
     "symbol": "HD",
