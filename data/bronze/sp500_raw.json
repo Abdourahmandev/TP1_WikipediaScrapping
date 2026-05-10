@@ -861,7 +861,7 @@
   },
   {
     "symbol": "CCL",
-    "security": "Carnival",
+    "security": "Carnival Corporation",
     "gics_sector": "Consumer Discretionary",
     "gics_sub_industry": "Hotels, Resorts & Cruise Lines",
     "headquarters_location": "Miami, Florida",
@@ -1338,16 +1338,6 @@
     "date_added": "1993-10-01",
     "cik": "0000909832",
     "founded": "1976"
-  },
-  {
-    "symbol": "CTRA",
-    "security": "Coterra",
-    "gics_sector": "Energy",
-    "gics_sub_industry": "Oil & Gas Exploration & Production",
-    "headquarters_location": "Houston, Texas",
-    "date_added": "2008-06-23",
-    "cik": "0000858470",
-    "founded": "2021 (1989)"
   },
   {
     "symbol": "CRH",
@@ -4658,6 +4648,16 @@
     "date_added": "2002-12-20",
     "cik": "0001035002",
     "founded": "1980"
+  },
+  {
+    "symbol": "VEEV",
+    "security": "Veeva Systems",
+    "gics_sector": "Health Care",
+    "gics_sub_industry": "Health Care Technology",
+    "headquarters_location": "Pleasanton, California",
+    "date_added": "2026-05-07",
+    "cik": "0001393052",
+    "founded": "2007"
   },
   {
     "symbol": "VTR",
