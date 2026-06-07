@@ -1750,16 +1750,6 @@
     "founded": "1999"
   },
   {
-    "symbol": "EPAM",
-    "security": "EPAM Systems",
-    "gics_sector": "Information Technology",
-    "gics_sub_industry": "IT Consulting & Other Services",
-    "headquarters_location": "Newtown, Pennsylvania",
-    "date_added": "2021-12-14",
-    "cik": "0001352010",
-    "founded": "1993"
-  },
-  {
     "symbol": "EQT",
     "security": "EQT Corporation",
     "gics_sector": "Energy",
@@ -1978,6 +1968,16 @@
     "date_added": "1980-12-31",
     "cik": "0001048911",
     "founded": "1971"
+  },
+  {
+    "symbol": "FDXF",
+    "security": "FedEx Freight",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Cargo Ground Transportation",
+    "headquarters_location": "Memphis, Tennessee",
+    "date_added": "2026-06-01",
+    "cik": "0002082247",
+    "founded": "1982"
   },
   {
     "symbol": "FIS",
