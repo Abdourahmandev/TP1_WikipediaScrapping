@@ -830,16 +830,6 @@
     "founded": "1981"
   },
   {
-    "symbol": "CPB",
-    "security": "Campbell's Company (The)",
-    "gics_sector": "Consumer Staples",
-    "gics_sub_industry": "Packaged Foods & Meats",
-    "headquarters_location": "Camden, New Jersey",
-    "date_added": "1957-03-04",
-    "cik": "0000016732",
-    "founded": "1869"
-  },
-  {
     "symbol": "COF",
     "security": "Capital One",
     "gics_sector": "Financials",
@@ -2030,6 +2020,16 @@
     "founded": "1984"
   },
   {
+    "symbol": "FLEX",
+    "security": "Flex Ltd.",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Electronic Manufacturing Services",
+    "headquarters_location": "Austin, Texas",
+    "date_added": "2026-06-22",
+    "cik": "0000866374",
+    "founded": "1969"
+  },
+  {
     "symbol": "F",
     "security": "Ford Motor Company",
     "gics_sector": "Consumer Discretionary",
@@ -3020,6 +3020,16 @@
     "founded": "1993"
   },
   {
+    "symbol": "MRVL",
+    "security": "Marvell Technology",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Semiconductors",
+    "headquarters_location": "Santa Clara, California",
+    "date_added": "2026-06-22",
+    "cik": "0001835632",
+    "founded": "1995"
+  },
+  {
     "symbol": "MAS",
     "security": "Masco",
     "gics_sector": "Industrials",
@@ -3698,16 +3708,6 @@
     "date_added": "1988-04-30",
     "cik": "0000713676",
     "founded": "1845"
-  },
-  {
-    "symbol": "POOL",
-    "security": "Pool Corporation",
-    "gics_sector": "Consumer Discretionary",
-    "gics_sub_industry": "Distributors",
-    "headquarters_location": "Covington, Louisiana",
-    "date_added": "2020-10-07",
-    "cik": "0000945841",
-    "founded": "1993"
   },
   {
     "symbol": "PPG",
