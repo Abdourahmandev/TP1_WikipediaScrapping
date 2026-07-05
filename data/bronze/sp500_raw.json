@@ -1210,16 +1210,6 @@
     "founded": "1997"
   },
   {
-    "symbol": "CAG",
-    "security": "Conagra Brands",
-    "gics_sector": "Consumer Staples",
-    "gics_sub_industry": "Packaged Foods & Meats",
-    "headquarters_location": "Chicago, Illinois",
-    "date_added": "1983-08-31",
-    "cik": "0000023217",
-    "founded": "1919"
-  },
-  {
     "symbol": "COP",
     "security": "ConocoPhillips",
     "gics_sector": "Energy",
@@ -2360,8 +2350,18 @@
     "founded": "1978"
   },
   {
+    "symbol": "HONA",
+    "security": "Honeywell Aerospace",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Aerospace & Defense",
+    "headquarters_location": "Phoenix, Arizona",
+    "date_added": "2026-06-29",
+    "cik": "0002089271",
+    "founded": "1914"
+  },
+  {
     "symbol": "HON",
-    "security": "Honeywell",
+    "security": "Honeywell Technologies",
     "gics_sector": "Industrials",
     "gics_sub_industry": "Industrial Conglomerates",
     "headquarters_location": "Charlotte, North Carolina",
