@@ -402,8 +402,8 @@
   {
     "symbol": "APP",
     "security": "AppLovin",
-    "gics_sector": "Information Technology",
-    "gics_sub_industry": "Application Software",
+    "gics_sector": "Communication Services",
+    "gics_sub_industry": "Advertising",
     "headquarters_location": "Palo Alto, California",
     "date_added": "2025-09-22",
     "cik": "0001751008",
@@ -1602,8 +1602,8 @@
   {
     "symbol": "DD",
     "security": "DuPont",
-    "gics_sector": "Materials",
-    "gics_sub_industry": "Specialty Chemicals",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Industrial Conglomerates",
     "headquarters_location": "Wilmington, Delaware",
     "date_added": "2019-06-03",
     "cik": "0001666700",
@@ -1668,16 +1668,6 @@
     "date_added": "2011-04-01",
     "cik": "0001099800",
     "founded": "1958"
-  },
-  {
-    "symbol": "EA",
-    "security": "Electronic Arts",
-    "gics_sector": "Communication Services",
-    "gics_sub_industry": "Interactive Home Entertainment",
-    "headquarters_location": "Redwood City, California",
-    "date_added": "2002-07-22",
-    "cik": "0000712515",
-    "founded": "1982"
   },
   {
     "symbol": "ELV",
@@ -1886,7 +1876,7 @@
     "gics_sub_industry": "Integrated Oil & Gas",
     "headquarters_location": "Irving, Texas",
     "date_added": "1957-03-04",
-    "cik": "0000034088",
+    "cik": "0002115436",
     "founded": "1999"
   },
   {
@@ -1958,6 +1948,16 @@
     "date_added": "2026-06-01",
     "cik": "0002082247",
     "founded": "1982"
+  },
+  {
+    "symbol": "FERG",
+    "security": "Ferguson Enterprises",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Building Products",
+    "headquarters_location": "Newport News, Virginia",
+    "date_added": "2026-08-05",
+    "cik": "0002011641",
+    "founded": "1953"
   },
   {
     "symbol": "FIS",
