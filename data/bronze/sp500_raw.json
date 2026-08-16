@@ -3271,7 +3271,7 @@
   },
   {
     "symbol": "MSCI",
-    "security": "MSCI Inc.",
+    "security": "MSCI",
     "gics_sector": "Financials",
     "gics_sub_industry": "Financial Exchanges & Data",
     "headquarters_location": "New York City, New York",
@@ -3471,7 +3471,7 @@
   },
   {
     "symbol": "ORLY",
-    "security": "O’Reilly Automotive",
+    "security": "O'Reilly Automotive",
     "gics_sector": "Consumer Discretionary",
     "gics_sub_industry": "Automotive Retail",
     "headquarters_location": "Springfield, Missouri",
@@ -3941,7 +3941,7 @@
   },
   {
     "symbol": "RMD",
-    "security": "ResMed",
+    "security": "ResMed|",
     "gics_sector": "Health Care",
     "gics_sub_industry": "Health Care Equipment",
     "headquarters_location": "San Diego, California",
