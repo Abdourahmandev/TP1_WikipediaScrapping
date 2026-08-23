@@ -530,16 +530,6 @@
     "founded": "1979"
   },
   {
-    "symbol": "AVB",
-    "security": "AvalonBay Communities",
-    "gics_sector": "Real Estate",
-    "gics_sub_industry": "Multi-Family Residential REITs",
-    "headquarters_location": "Arlington, Virginia",
-    "date_added": "2007-01-10",
-    "cik": "0000915912",
-    "founded": "1978"
-  },
-  {
     "symbol": "AVY",
     "security": "Avery Dennison",
     "gics_sector": "Materials",
@@ -1748,16 +1738,6 @@
     "date_added": "2015-03-20",
     "cik": "0001101239",
     "founded": "1998"
-  },
-  {
-    "symbol": "EQR",
-    "security": "Equity Residential",
-    "gics_sector": "Real Estate",
-    "gics_sub_industry": "Multi-Family Residential REITs",
-    "headquarters_location": "Chicago, Illinois",
-    "date_added": "2001-12-03",
-    "cik": "0000906107",
-    "founded": "1969"
   },
   {
     "symbol": "ERIE",
@@ -3880,6 +3860,16 @@
     "founded": "1962"
   },
   {
+    "symbol": "RDDT",
+    "security": "Reddit",
+    "gics_sector": "Communication Services",
+    "gics_sub_industry": "Interactive Media & Services",
+    "headquarters_location": "San Francisco, California",
+    "date_added": "2026-08-18",
+    "cik": "0001713445",
+    "founded": "2005"
+  },
+  {
     "symbol": "RTX",
     "security": "RTX Corporation",
     "gics_sector": "Industrials",
@@ -4768,6 +4758,16 @@
     "date_added": "2024-05-08",
     "cik": "0001692819",
     "founded": "2016"
+  },
+  {
+    "symbol": "VMRK",
+    "security": "Vivmark Residential",
+    "gics_sector": "Real Estate",
+    "gics_sub_industry": "Multi-Family Residential REITs",
+    "headquarters_location": "Chicago, Illinois",
+    "date_added": "2001-12-03",
+    "cik": "0000906107",
+    "founded": "1969"
   },
   {
     "symbol": "VMC",
