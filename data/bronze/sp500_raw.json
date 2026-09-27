@@ -670,6 +670,16 @@
     "founded": "2009"
   },
   {
+    "symbol": "BE",
+    "security": "Bloom Energy",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Electrical Components & Equipment",
+    "headquarters_location": "San Jose, California",
+    "date_added": "2026-09-21",
+    "cik": "0001664703",
+    "founded": "2001"
+  },
+  {
     "symbol": "BNY",
     "security": "BNY Mellon",
     "gics_sector": "Financials",
@@ -758,16 +768,6 @@
     "date_added": "1982-10-31",
     "cik": "0000014693",
     "founded": "1870"
-  },
-  {
-    "symbol": "BLDR",
-    "security": "Builders FirstSource",
-    "gics_sector": "Industrials",
-    "gics_sub_industry": "Building Products",
-    "headquarters_location": "Irving, Texas",
-    "date_added": "2023-12-18",
-    "cik": "0001316835",
-    "founded": "1998"
   },
   {
     "symbol": "BG",
@@ -1790,6 +1790,16 @@
     "founded": "1909"
   },
   {
+    "symbol": "P",
+    "security": "Everpure",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Technology Hardware, Storage & Peripherals",
+    "headquarters_location": "Santa Clara, California",
+    "date_added": "2026-09-21",
+    "cik": "0001474432",
+    "founded": "2009"
+  },
+  {
     "symbol": "ES",
     "security": "Eversource Energy",
     "gics_sector": "Utilities",
@@ -2468,6 +2478,16 @@
     "date_added": "1986-02-28",
     "cik": "0000049826",
     "founded": "1912"
+  },
+  {
+    "symbol": "ILMN",
+    "security": "Illumina, Inc.",
+    "gics_sector": "Health Care",
+    "gics_sub_industry": "Life Sciences Tools & Services",
+    "headquarters_location": "San Diego, California",
+    "date_added": "2026-09-21",
+    "cik": "0001110803",
+    "founded": "1998"
   },
   {
     "symbol": "INCY",
@@ -3168,16 +3188,6 @@
     "date_added": "2021-07-21",
     "cik": "0001682852",
     "founded": "2010"
-  },
-  {
-    "symbol": "TAP",
-    "security": "Molson Coors Beverage Company",
-    "gics_sector": "Consumer Staples",
-    "gics_sub_industry": "Brewers",
-    "headquarters_location": "Chicago, Illinois",
-    "date_added": "1976-06-30",
-    "cik": "0000024545",
-    "founded": "2005 (Molson 1786, Coors 1873)"
   },
   {
     "symbol": "MDLZ",
@@ -4438,16 +4448,6 @@
     "date_added": "2025-03-24",
     "cik": "0001973266",
     "founded": "2023"
-  },
-  {
-    "symbol": "TTD",
-    "security": "Trade Desk (The)",
-    "gics_sector": "Communication Services",
-    "gics_sub_industry": "Advertising",
-    "headquarters_location": "Ventura, California",
-    "date_added": "2025-07-18",
-    "cik": "0001671933",
-    "founded": "2009"
   },
   {
     "symbol": "TSCO",
