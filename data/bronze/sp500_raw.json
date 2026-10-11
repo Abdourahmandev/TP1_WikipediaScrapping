@@ -1280,16 +1280,6 @@
     "founded": "2000"
   },
   {
-    "symbol": "CTVA",
-    "security": "Corteva",
-    "gics_sector": "Materials",
-    "gics_sub_industry": "Fertilizers & Agricultural Chemicals",
-    "headquarters_location": "Indianapolis, Indiana",
-    "date_added": "2019-06-03",
-    "cik": "0001755672",
-    "founded": "2019"
-  },
-  {
     "symbol": "CSGP",
     "security": "CoStar Group",
     "gics_sector": "Real Estate",
@@ -3580,16 +3570,6 @@
     "founded": "2005"
   },
   {
-    "symbol": "PSKY",
-    "security": "Paramount Skydance Corporation",
-    "gics_sector": "Communication Services",
-    "gics_sub_industry": "Movies & Entertainment",
-    "headquarters_location": "Los Angeles, California",
-    "date_added": "1994-09-30",
-    "cik": "0002041610",
-    "founded": "2025 (Paramount Pictures1912)"
-  },
-  {
     "symbol": "PH",
     "security": "Parker Hannifin",
     "gics_sector": "Industrials",
@@ -4120,6 +4100,16 @@
     "founded": "2003"
   },
   {
+    "symbol": "SKYD",
+    "security": "Skydance Corporation",
+    "gics_sector": "Communication Services",
+    "gics_sub_industry": "Movies & Entertainment",
+    "headquarters_location": "New York City, New York",
+    "date_added": "1994-09-30",
+    "cik": "0002041610",
+    "founded": "2025 (Paramount Pictures1912)"
+  },
+  {
     "symbol": "SWKS",
     "security": "Skyworks Solutions",
     "gics_sector": "Information Technology",
@@ -4510,6 +4500,16 @@
     "founded": "1872"
   },
   {
+    "symbol": "TWLO",
+    "security": "Twilio",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Systems Software",
+    "headquarters_location": "San Francisco, California",
+    "date_added": "2026-10-06",
+    "cik": "0001447669",
+    "founded": "2008"
+  },
+  {
     "symbol": "TYL",
     "security": "Tyler Technologies",
     "gics_sector": "Information Technology",
@@ -4780,6 +4780,16 @@
     "founded": "1909"
   },
   {
+    "symbol": "VYLR",
+    "security": "Vylor",
+    "gics_sector": "Consumer Staples",
+    "gics_sub_industry": "Agricultural Products & Services",
+    "headquarters_location": "Johnston, Iowa",
+    "date_added": "2026-10-01",
+    "cik": "0002128626",
+    "founded": "2026"
+  },
+  {
     "symbol": "WRB",
     "security": "W. R. Berkley Corporation",
     "gics_sector": "Financials",
@@ -4828,16 +4838,6 @@
     "date_added": "1976-06-30",
     "cik": "0001744489",
     "founded": "1923"
-  },
-  {
-    "symbol": "WBD",
-    "security": "Warner Bros. Discovery",
-    "gics_sector": "Communication Services",
-    "gics_sub_industry": "Broadcasting",
-    "headquarters_location": "New York City, New York",
-    "date_added": "2022-04-11",
-    "cik": "0001437107",
-    "founded": "2022 (Warner Bros.1923)"
   },
   {
     "symbol": "WM",
