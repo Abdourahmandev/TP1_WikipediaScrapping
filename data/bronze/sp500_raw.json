@@ -3750,16 +3750,6 @@
     "founded": "1875"
   },
   {
-    "symbol": "PEG",
-    "security": "Public Service Enterprise Group",
-    "gics_sector": "Utilities",
-    "gics_sub_industry": "Electric Utilities",
-    "headquarters_location": "Newark, New Jersey",
-    "date_added": "1957-03-04",
-    "cik": "0000788784",
-    "founded": "1903"
-  },
-  {
     "symbol": "PTC",
     "security": "PTC Inc.",
     "gics_sector": "Information Technology",
@@ -3768,6 +3758,16 @@
     "date_added": "2021-04-20",
     "cik": "0000857005",
     "founded": "1985"
+  },
+  {
+    "symbol": "PEG",
+    "security": "Public Service Enterprise Group",
+    "gics_sector": "Utilities",
+    "gics_sub_industry": "Electric Utilities",
+    "headquarters_location": "Newark, New Jersey",
+    "date_added": "1957-03-04",
+    "cik": "0000788784",
+    "founded": "1903"
   },
   {
     "symbol": "PSA",
@@ -3790,14 +3790,14 @@
     "founded": "1956"
   },
   {
-    "symbol": "PWR",
-    "security": "Quanta Services",
-    "gics_sector": "Industrials",
-    "gics_sub_industry": "Construction & Engineering",
-    "headquarters_location": "Houston, Texas",
-    "date_added": "2009-07-01",
-    "cik": "0001050915",
-    "founded": "1997"
+    "symbol": "Q",
+    "security": "Qnity Electronics",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Semiconductor Materials & Equipment",
+    "headquarters_location": "Wilmington, Delaware",
+    "date_added": "2025-11-03",
+    "cik": "0002058873",
+    "founded": "2025"
   },
   {
     "symbol": "QCOM",
@@ -3810,6 +3810,16 @@
     "founded": "1985"
   },
   {
+    "symbol": "PWR",
+    "security": "Quanta Services",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Construction & Engineering",
+    "headquarters_location": "Houston, Texas",
+    "date_added": "2009-07-01",
+    "cik": "0001050915",
+    "founded": "1997"
+  },
+  {
     "symbol": "DGX",
     "security": "Quest Diagnostics",
     "gics_sector": "Health Care",
@@ -3818,16 +3828,6 @@
     "date_added": "2002-12-12",
     "cik": "0001022079",
     "founded": "1967"
-  },
-  {
-    "symbol": "Q",
-    "security": "Qnity Electronics",
-    "gics_sector": "Information Technology",
-    "gics_sub_industry": "Semiconductor Materials & Equipment",
-    "headquarters_location": "Wilmington, Delaware",
-    "date_added": "2025-11-03",
-    "cik": "0002058873",
-    "founded": "2025"
   },
   {
     "symbol": "RL",
@@ -3858,16 +3858,6 @@
     "date_added": "2026-08-18",
     "cik": "0001713445",
     "founded": "2005"
-  },
-  {
-    "symbol": "RTX",
-    "security": "RTX Corporation",
-    "gics_sector": "Industrials",
-    "gics_sub_industry": "Aerospace & Defense",
-    "headquarters_location": "Waltham, Massachusetts",
-    "date_added": "1957-03-04",
-    "cik": "0000101829",
-    "founded": "1922"
   },
   {
     "symbol": "O",
@@ -4000,6 +3990,16 @@
     "founded": "1997"
   },
   {
+    "symbol": "RTX",
+    "security": "RTX Corporation",
+    "gics_sector": "Industrials",
+    "gics_sub_industry": "Aerospace & Defense",
+    "headquarters_location": "Waltham, Massachusetts",
+    "date_added": "1957-03-04",
+    "cik": "0000101829",
+    "founded": "1922"
+  },
+  {
     "symbol": "SPGI",
     "security": "S&P Global",
     "gics_sector": "Financials",
@@ -4101,7 +4101,7 @@
   },
   {
     "symbol": "SKYD",
-    "security": "Skydance Corporation",
+    "security": "Skydance",
     "gics_sector": "Communication Services",
     "gics_sub_industry": "Movies & Entertainment",
     "headquarters_location": "New York City, New York",
