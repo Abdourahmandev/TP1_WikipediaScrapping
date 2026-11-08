@@ -2690,16 +2690,6 @@
     "founded": "2000 (1799 / 1871)"
   },
   {
-    "symbol": "KVUE",
-    "security": "Kenvue",
-    "gics_sector": "Consumer Staples",
-    "gics_sub_industry": "Personal Care Products",
-    "headquarters_location": "Skillman, New Jersey",
-    "date_added": "2023-08-25",
-    "cik": "0001944048",
-    "founded": "2022 (Johnson & Johnsonspinoff)"
-  },
-  {
     "symbol": "KDP",
     "security": "Keurig Dr Pepper",
     "gics_sector": "Consumer Staples",
@@ -3468,6 +3458,16 @@
     "date_added": "1957-03-04",
     "cik": "0000797468",
     "founded": "1920"
+  },
+  {
+    "symbol": "OKTA",
+    "security": "Okta, Inc.",
+    "gics_sector": "Information Technology",
+    "gics_sub_industry": "Application Software",
+    "headquarters_location": "San Francisco, California",
+    "date_added": "2026-11-04",
+    "cik": "0001660134",
+    "founded": "2009"
   },
   {
     "symbol": "ODFL",
